@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+body {
+    background-color: darkgreen;
+}
+h1 {
+    color: firebrick;
+}
+h2 {
+    color: firebrick;
+}
+p {
+   color: white;
+}
