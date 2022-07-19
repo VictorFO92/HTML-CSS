@@ -13,12 +13,13 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
 }
 
 html, body {
     background-color: darkgray;
-    font-family: var(--fonte1);
     min-height: 100vh;
+    font-family: var(--fonte1);
 }
 
 header {
@@ -28,9 +29,10 @@ header {
 }
 
 header > h1 {
-    padding: 50px;
+    padding-top: 50px;
     font-variant: small-caps;
     font-family: var(--fonte2);
+    font-size: 10vw;
 }
 
 header > p {
@@ -52,6 +54,8 @@ padding-top: 10vh;
 padding-bottom: 10vh; 
 line-height: 2em;
 padding-left: 30px;
+font-family: var(--fonte3);
+font-size: 3vw;
 }
 
 section.normal {
@@ -66,7 +70,8 @@ section.imagem {
 
 section.imagem > p {
 background-color: rgba(48, 43, 43, 0.5);
-width: 400px;
+display: inline-block;
+padding: 5px;
 }
 
 footer{
