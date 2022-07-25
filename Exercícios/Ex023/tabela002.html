@@ -21,6 +21,13 @@
             padding: 10px;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         thead, tfoot {
             background-color: grey;
             color: white;
@@ -30,6 +37,12 @@
             text-align: right;
         }
         
+        tbody tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+
+        /*Podemos usar odd(impar ou 2n-1) ou even(par) também*/
+
        th.num {
         text-align: right;
        }
@@ -41,6 +54,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -49,10 +63,13 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>
+            População das Unidades Fedrativas
+        </caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -167,7 +184,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habtantes</th>
+                <th scope="row">Total de habtantes</th>
                 <th class="num"><strong>210.147.125</strong></th>
             </tr>
         </tfoot>
